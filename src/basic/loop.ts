@@ -12,13 +12,11 @@ export default function loop() {
     forOfStringLoop() // 8
     symbolIterator() //9
 }
+
 function whileLoop() {
     console.log(`------ 0. while-loop ------`)
-    let count: number =0
-    let sum = 0
-    /*for(let i=1; i<101; i++){
-        sum = sum+i
-    }*/
+    let count: number = 0
+    let sum: number = 0
     while (count<100){
         count++
         sum = sum+count
@@ -38,6 +36,11 @@ function doWhileLoop() {
 }
 function forLoop() {
     console.log(`------ 2. for-loop ------`)
+    let sum: number = 0
+    for(let i=1; i<101; i++){
+        sum = sum+i
+    }
+    console.log(`1부터 100까지 합: ${sum}`)
 }
 function forInArrayLoop() {
     console.log(`------ 3. for-In-Array-loop ------`)
