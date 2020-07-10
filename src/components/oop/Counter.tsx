@@ -2,10 +2,8 @@ import React,{Component} from "react";
 interface CounterProps {
     startNumber: number
 }
-interface CounterState {
-    number: number
-}
-class Counter extends Component<CounterProps,CounterState>{
+
+class Counter extends Component<CounterProps>{
     [x: string]: any
     //ArrayList<?> arr = new
     //arr.add("")

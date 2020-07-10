@@ -1,9 +1,9 @@
 import React, {Component} from "react";
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import {Home, Chat} from "./components";
+import {Chat} from "./components";
 import './App.css';
-import {Counter, Hello, Clock, Kitty} from "./oop";
-import {HomePage} from "./pages/home";
+import {Counter, Hello, Clock, Kitty} from "./components/oop";
+import {HomePage} from "./pages";
 
 class App extends Component<any, any>{
     public render(){
@@ -14,7 +14,7 @@ class App extends Component<any, any>{
             <Link to="/hello">헬로 이동</Link><br/>
             <Link to="/clock">시계 이동</Link><br/>
             <Link to="/kitty">고양이 이동</Link><br/>
-            <Route exact path='/' component={Home}/>
+            <Route exact path='/' component={HomePage}/>
             <Route exact path='/chat' component={Chat}/>
             <Route exact path='/count' component={Counter}>
                 <Counter startNumber={0}/>
